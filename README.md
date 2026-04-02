@@ -52,6 +52,23 @@
 | 9  | Regresión lineal                 | 0.798 | 1.031 | 0.799 | 1.030 |
 | 10 | Ingenuo                          | 0.959 | 1.305 | 0.959 | 1.305 |
 
+## 1 = Bajo peso 
+
+| #  | Modelo                          | precision_1 | recall_1 | precision_0 | recall_0 |
+|----|---------------------------------|-------------|----------|-------------|----------|
+| 0  | SVR RBF                         | 0.729       | 0.438    | 0.954       | 0.986    |
+| 1  | SVR polinómico                  | 0.713       | 0.437    | 0.953       | 0.985    |
+| 2  | Random Forest (depth=40, 2-2)   | 0.744       | 0.416    | 0.952       | 0.988    |
+| 3  | Random Forest (depth=60, 5-5)   | 0.755       | 0.411    | 0.951       | 0.989    |
+| 4  | Gradient Boosting profundo      | 0.760       | 0.411    | 0.951       | 0.989    |
+| 5  | XGBoost                         | 0.760       | 0.410    | 0.951       | 0.989    |
+| 6  | Random Forest (depth=20, 5-5)   | 0.760       | 0.408    | 0.951       | 0.989    |
+| 7  | Regresión lineal                | 0.727       | 0.407    | 0.951       | 0.987    |
+| 8  | SVR lineal                      | 0.726       | 0.407    | 0.951       | 0.987    |
+| 9  | Gradient Boosting               | 0.757       | 0.407    | 0.951       | 0.989    |
+| 10 | Ingenuo                         | 0.000       | 0.000    | 0.921       | 1.000    |
+
+
 ## 📊 Comparación de Modelos Johnny
 
 | # | Modelo          | Accuracy | Precision (bajo peso) | Recall (bajo peso) | F1 (bajo peso) | ROC AUC | PR AUC |
